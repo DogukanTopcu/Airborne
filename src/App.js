@@ -1,7 +1,7 @@
 
 import Navbar from "./Navbar/navbar";
 import Footer from "./Footer/footer";
-import "./App.css"
+import Body from "./Content/body"
 
 export default function App() {
   return (
@@ -21,8 +21,3 @@ function Container() {
     );
 }
 
-function Body() {
-  return (
-    <div className="body"></div>
-  );
-}
