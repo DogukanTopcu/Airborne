@@ -5,7 +5,7 @@ import "./footer.css";
 export default function Footer() {
     return (
         <footer>
-          <div id="title">İLETİŞİM BİLGİLERİ</div>
+            <div id="footer-top">İLETİŞİM BİLGİLERİ</div>
             <div id="adres">
                 <p>Adres:</p><p>Gülbahçe, İzmir Yüksek Teknoloji Enstitüsü, 35430 Urla/İzmir</p>
             </div>
@@ -17,7 +17,10 @@ export default function Footer() {
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     <a href="https://www.linkedin.com/company/airborneroket" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <div className="copyright">© 2022 Airborne Rocket</div>
+            <div id='footer-bottom'>
+                <div id="copyright">© 2022 Airborne Rocket</div>
+                <div className='language'><a href='#'>English</a></div>
+            </div>
         </footer>
-      );
+    );
 }
