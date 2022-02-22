@@ -11,6 +11,11 @@ footer{
     background-color: #000;
 }
 
+#footer-text {
+    /* margin: 50px; */
+    padding:60px 80px 80px 80px;
+}
+
 #footer-top{
     font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
@@ -92,40 +97,3 @@ footer{
 }
 
 
-#footer-text {
-    /* margin: 50px; */
-    padding: 80px;
-}
-
-
-
-@media screen and (min-width: 3250px) {
-    #footer-top{
-        font-size: 62px;
-        margin: 20px;
-    }
-
-    #adres p{
-        font-size: 50px;
-        margin: 20px;
-    }
-
-    #tel p{
-        font-size: 50px;
-        margin: 20px;
-    }
-
-    #social-media a{
-        font-size: 55px;
-        margin: 0 30px;
-    }
-
-    .language{
-        font-size: 45px;
-    }
-
-    #copyright{
-        font-size: 55px;
-        margin-right: 60px;
-    }
-}
