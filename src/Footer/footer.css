@@ -7,9 +7,8 @@
 
 footer{
     width: 100%;
-    height: 310px;
+    height: auto;
     background-color: #000;
-    padding: 25px 0 0 0;
 }
 
 #footer-top{
@@ -17,7 +16,7 @@ footer{
     font-family: 'Times New Roman', Times, serif;
     color: #919191;
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 
@@ -67,7 +66,7 @@ footer{
 }
 
 #footer-bottom{
-    width: 230px;
+    width: auto;
     height: auto;
     margin: 0 auto;
 }
@@ -90,4 +89,43 @@ footer{
 .language a{
     color:#919191;
     text-decoration: none;
+}
+
+
+#footer-text {
+    /* margin: 50px; */
+    padding: 80px;
+}
+
+
+
+@media screen and (min-width: 3250px) {
+    #footer-top{
+        font-size: 62px;
+        margin: 20px;
+    }
+
+    #adres p{
+        font-size: 50px;
+        margin: 20px;
+    }
+
+    #tel p{
+        font-size: 50px;
+        margin: 20px;
+    }
+
+    #social-media a{
+        font-size: 55px;
+        margin: 0 30px;
+    }
+
+    .language{
+        font-size: 45px;
+    }
+
+    #copyright{
+        font-size: 55px;
+        margin-right: 60px;
+    }
 }
