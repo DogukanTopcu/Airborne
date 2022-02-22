@@ -41,6 +41,30 @@ nav ul{
     color: #fff;
 }
 
+.lang-dropdown{
+    display: inline-block;
+    width: auto;
+    font-family: "Raleway";
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    padding: 0 15px;
+    margin:0;
+}
+
+.span{
+    margin-right: 15px;
+}
+
+.lang-dropdown:hover{
+    background-color: #000;
+}
+
+.lang-dropdown-content{
+    display: none;
+}
+
 /* Logo settings */
 
 #logo{
