@@ -12,7 +12,7 @@
 
 nav{
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color:rgba(0, 0, 0, 0.6);
     position: fixed;
 }
@@ -27,13 +27,13 @@ nav ul{
     display:inline-block;
     font-family: "Raleway";
     font-size: 16px;
-    margin: 30px 0;
+    margin: 25px 0;
 }
 
 .items a{
     text-decoration: none;
     color:#fff;
-    padding:30px 15px;
+    padding:25px 15px;
 }
 
 .items a:hover{
@@ -61,23 +61,36 @@ nav ul{
     background-color: #000;
 }
 
+#icon-down{
+    display: inline-block;
+}
+
+#icon-up{
+    display: none;
+}
+
 .lang-dropdown-content{
     display: none;
-    width: 100px;
-    height: 30px;
+    width: 87.3px;
+    height: 40px;
     background-color: rgba(0, 0, 0, 0.6);
+    background-size: 100%;
     font-size: 16px;
-    padding-left: 10px;
-    padding-top: 10px;
+    margin-left: 468.96px;
+    padding-top: 20px;
 }
 
 .lang-dropdown-content a{
     text-decoration: none;
     font-family: "Raleway";
     color: #fff;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    padding-left: 15px;
+    padding-right: 39px;
 }
 
-.lang-dropdown-content:hover{
+.lang-dropdown-content a:hover{
     background-color: #000;
 }
 
