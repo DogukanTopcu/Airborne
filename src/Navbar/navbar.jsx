@@ -65,8 +65,8 @@ function Items() {
       <button onClick={() => { name() }} id="lang" className="lang-dropdown">
         <li className='items'>
           <span className="span">TUR</span>
-          <div id="icon-down" ><i class="fa-solid fa-angle-down"></i></div>
-          <div id="icon-up" ><i class="fa-solid fa-angle-up"></i></div>
+          <div id="icon-down" ><i className="fa-solid fa-angle-down"></i></div>
+          <div id="icon-up" ><i className="fa-solid fa-angle-up"></i></div>
         </li>
       </button>
       <div className="lang-dropdown-content" onClick={() => { name() }}>
