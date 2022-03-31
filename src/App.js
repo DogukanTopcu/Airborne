@@ -6,7 +6,7 @@ import Body from "./Content/body"
 class App extends React.Component {
 
   state= {
-    
+
     language1:"TUR",
 
     langs: [
@@ -15,7 +15,7 @@ class App extends React.Component {
         contact:"CONTACT",
         gallery:"GALLERY",
         about:"ABOUT US",
-        footerTitle:"CONTACT",
+        footerTitle:"CONTACT US",
         address:"Address:",
         phone:"Phone Number:",
         lang:"ENG"
@@ -33,7 +33,7 @@ class App extends React.Component {
     ]
 
   }
-  
+
 
   setLang = (language) => {
     this.setState({language1: language});

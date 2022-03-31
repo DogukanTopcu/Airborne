@@ -19,7 +19,7 @@ footer{
 #footer-top{
     font-size: 22px;
     font-family: 'Times New Roman', Times, serif;
-    color: #919191;
+    color: #9a9a9a;
     text-align: center;
     /* margin-top: 20px; */
 }
@@ -66,8 +66,8 @@ footer{
 }
 
 #social-media a:hover > i{
-    transform: scale(1.5);
-    transition: 0.3s;
+    transform: scale(1.4);
+    transition: 0.5s;
 }
 
 #footer-bottom{
@@ -78,7 +78,7 @@ footer{
 
 #copyright{
     float: left;
-    color:#919191;
+    color: #9a9a9a;;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
     margin-right: 20px;
@@ -86,13 +86,13 @@ footer{
 
 .language{
     float: left;
-    color:#919191;
+    color:#9a9a9a;
     font-size: 15px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .language a{
-    color:#919191;
+    color:#9a9a9a;
     text-decoration: none;
 }
 

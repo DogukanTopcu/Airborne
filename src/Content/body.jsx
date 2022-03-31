@@ -6,4 +6,3 @@ export default function Body() {
       <div className="body"></div>
     );
 }
-
