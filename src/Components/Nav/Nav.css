@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+nav{
+    max-width: 1800px;
+    width: 100vw;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: black;
+    border-bottom: 5px solid rgb(81, 25, 185);
+}
+
+.logo{
+    float: left;
+    margin: 30px 0 0 100px;
+    user-select: none;
+}
+
+nav ul{
+    float: right;
+    list-style-type: none;
+}
+
+.items{
+    float: left;
+    font-size: 16px;
+    font-family: "Fira sans", sans-serif; 
+    margin: 47px 5px 0;  
+    user-select: none;
+}
+
+.items a{
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 20px;  
+    border-radius: 20px;
+}
+
+.items a:hover{
+    background-color: rgb(81, 25, 185);
+}
+
+.hamburger{
+    float: right;
+    background: none;
+    margin: 46.5px 100px 0;
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.hamburger div{
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    transform-origin: 0 0;
+    transition: 0.4s;
+    border-radius: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.hamburger:hover div:nth-child(2){
+    transform: translateX(10px);
+    background-color: rgb(81, 25, 185);
+}
+
+.hamburger.is-active div:nth-child(1){
+    transform: rotate(45deg) translate(0, -2px);
+}
+
+.hamburger.is-active div:nth-child(3){
+    transform: rotate(-45deg) translate(-3px, 3px);
+}
+
+.hamburger.is-active div:nth-child(2){
+    opacity: 0;
+}

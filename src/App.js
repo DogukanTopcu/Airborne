@@ -1,67 +1,22 @@
 import React from "react";
-import Navbar from "./Navbar/navbar";
-import Footer from "./Footer/footer";
-import Body from "./Content/body"
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import NavBar from "./Components/Nav/Nav";
 
-class App extends React.Component {
-
-  state= {
-
-    language1:"TUR",
-
-    langs: [
-      {
-        donate:"DONATE",
-        contact:"CONTACT",
-        gallery:"GALLERY",
-        about:"ABOUT US",
-        footerTitle:"CONTACT US",
-        address:"Address:",
-        phone:"Phone Number:",
-        lang:"ENG"
-      },
-      {
-        donate:"DESTEK OL",
-        contact:"İLETİŞİME GEÇ",
-        gallery:"GALERİ",
-        about:"HAKKIMIZDA",
-        footerTitle:"İLETİŞİM BİLGİLERİ",
-        address:"Adres:",
-        phone: "Telefon Numarası:",
-        lang:"TUR"
-      }
-    ]
-
-  }
-
-
-  setLang = (language) => {
-    this.setState({language1: language});
-  }
+class App extends React.Component{
 
   render(){
-
-    var langFiltered = this.state.langs.filter(
-      (langItem) => {
-          return langItem.lang === this.state.language1;
-      }
-    );
-
-    return (
-      <div className="App">
-        <dir className="container">
-          <Navbar
-            setLangProp={this.setLang}
-            langFilteredProp = {langFiltered}
-          />
-          <Body/>
-      </dir>
-        <Footer 
-          langFilteredProp={langFiltered}
-        />
+    return(
+      <div className="container">
+        <NavBar/>
       </div>
     );
-  };
+  }
 }
 
 export default App;
