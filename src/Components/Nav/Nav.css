@@ -8,6 +8,10 @@ nav{
     transition: 0.4s;
 }
 
+nav ul li{
+    display: inline-block;
+}
+
 .logo{
     float: left;
     margin: 20px 0 0 8%;
@@ -17,17 +21,16 @@ nav{
 .items-container{
     list-style-type: none;
     position: absolute;
-    margin-top: -12px;
+    margin-top: 8px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
 .items{
-    float: left;
     font-size: 15px;
     font-family: "Fira sans", sans-serif; 
-    margin: 37px 5px 0;  
+    margin: 0 5px 0;  
     user-select: none;
 }
 
@@ -53,13 +56,56 @@ nav{
     font-size: 17px;
 }
 
+.langs button{
+    font-weight: 600;
+    font-size: 15px;
+    background: none;
+    appearance: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 15px 15px;
+    position: relative;
+}
+
+.langs:hover .langs-content{
+    display: block;
+}
+
+.langs-content{
+    display: none;
+    background-color: rgb(37, 37, 37);
+    border-top: 2px solid rgb(255, 255, 255);
+    right: -8px;
+    position: absolute;
+}
+
+.langs-content p{
+    padding: 8px 5px;
+    border-bottom: 1px solid black;
+}
+
+.langs-content a{
+    font-size: 14px;
+    font-family: "Fira sans", sans-serif; 
+    text-decoration: none;
+    padding: 5px 130px 5px 20px;
+    color: rgb(255, 255, 255);
+}
+
+.langs-content a:hover{
+    background-color: black;
+    padding: 5px 90px 5px 60px;
+    transition: 0.2s;
+}
+
 .social{
     float: right;
     margin-right: 8%;
 }
 
 .social li{
-    float: left;
     font-size: 15px;
     font-family: "Fira sans", sans-serif; 
     margin: 37px 5px 0;  
