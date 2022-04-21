@@ -1,51 +1,96 @@
 @charset "UTF-8";
 
 nav{
-    max-width: 1800px;
     width: 100vw;
-    height: 100px;
-    margin: 0 auto;
-    border-radius: 20px;
-    background-color: black;
-    border-bottom: 5px solid rgb(81, 25, 185);
+    height: 80px;
+    border-radius: 0 0 20px 20px;
+    position: fixed;
+    transition: 0.4s;
 }
 
 .logo{
     float: left;
-    margin: 30px 0 0 7%;
+    margin: 20px 0 0 8%;
     user-select: none;
 }
 
-nav ul{
-    float: right;
+.items-container{
     list-style-type: none;
-    margin-right: 7%;
+    position: absolute;
+    margin-top: -12px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .items{
     float: left;
-    font-size: 16px;
+    font-size: 15px;
     font-family: "Fira sans", sans-serif; 
-    margin: 47px 5px 0;  
+    margin: 37px 5px 0;  
     user-select: none;
 }
 
 .items a{
     font-weight: 600;
     color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 10px 20px;  
-    border-radius: 20px;
+    text-decoration: none;  
+    padding: 15px 15px;
 }
 
 .items a:hover{
-    background-color: rgb(81, 25, 185);
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.items a:hover i{
+    transform: scale(1.8);
+    transition: 0.2s;
+}
+
+.items i{
+    color: #fff;
+    font-size: 17px;
+}
+
+.social{
+    float: right;
+    margin-right: 8%;
+}
+
+.social li{
+    float: left;
+    font-size: 15px;
+    font-family: "Fira sans", sans-serif; 
+    margin: 37px 5px 0;  
+    user-select: none;
+}
+
+.social li a{
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-decoration: none;  
+    border-radius: 20px;
+    padding: 15px 20px;
+}
+
+.social li a:hover i{
+    transform: scale(1.8);
+    transition: 0.2s;
+}
+
+.social i{
+    font-size: 19px;
+}
+
+.menu{
+    float: right;
+    margin-right: 8%;
 }
 
 .hamburger{
-    float: right;
     background: none;
-    margin: 46.5px 7% 0 80px;
+    margin: 33px 0 0 80px;
     appearance: none;
     border: none;
     outline: none;
@@ -56,7 +101,7 @@ nav ul{
 
 .hamburger div{
     width: 33px;
-    height: 4px;
+    height: 2px;
     margin-bottom: 5px;
     background-color: #fff;
     transform-origin: 0 0;
@@ -71,23 +116,84 @@ nav ul{
     background-color: rgb(81, 25, 185);
 }
 
-.hamburger.is-active div:nth-child(1){
+.menu.is-active .hamburger div:nth-child(1){
     transform: rotate(45deg) translate(0, -2px);
 }
 
-.hamburger.is-active div:nth-child(3){
-    transform: rotate(-45deg) translate(-3px, 3px);
+.menu.is-active .hamburger div:nth-child(3){
+    transform: rotate(-45deg) translate(-3.5px, 5.5px);
 }
 
-.hamburger.is-active div:nth-child(2){
+.menu.is-active .hamburger div:nth-child(2){
     opacity: 0;
 }
 
-@media (min-width: 840px){
-    .hamburger{display: none;}
+.menu.is-active .menu-content p{
+    transform: translateX(0);
 }
 
-@media (max-width: 840px){
+.menu-content p:nth-child(1){
+    transform: translateX(110%);
+    transition: 0.4s;
+}
+
+.menu-content p:nth-child(2){
+    transform: translateX(110%);
+    transition: 0.5s;
+}
+
+.menu-content p:nth-child(3){
+    transform: translateX(110%);
+    transition: 0.6s;
+}
+
+.menu-content p:nth-child(4){
+    transform: translateX(110%);
+    transition: 0.7s;
+}
+
+.menu-content p:nth-child(5){
+    transform: translateX(110%);
+    transition: 0.8s;
+}
+
+.menu-content{
+    padding-top: 24px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.menu-content p{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Fira sans", sans-serif; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-radius: 15px 0 0 15px;
+    border-top: 0.5px solid rgb(29, 29, 29);
+    border-bottom: 0.5px solid rgb(29, 29, 29);
+}
+
+.menu-content a{
+    padding: 15px 400px 15px 7.5%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-content p:hover{
+    background-color: rgb(29, 29, 29);
+}
+
+@media (min-width: 982px){
+    .menu{display: none;}
+
+}
+
+@media (max-width: 982px){
     nav ul{
         display: none;
     }
