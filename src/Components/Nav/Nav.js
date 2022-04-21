@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import "./Nav.css"
 
 class NavBar extends React.Component{
@@ -22,19 +23,19 @@ class NavBar extends React.Component{
                     <div></div>
                 </button>
                 <div className="menu-content">
-                    <p style={{borderTop:"none"}}><a href="">Home</a></p>
-                    <p><a href="">Donate</a></p>
-                    <p><a href="">About</a></p>
-                    <p><a href="">Contact</a></p>
+                    <p style={{borderTop:"none"}}><Link to="/">Home</Link></p>
+                    <p><Link to="/donate">Donate</Link></p>
+                    <p><Link to="/about">About</Link></p>
+                    <p><Link to="/contact">Contact</Link></p>
                     <p style={{borderBottom:"none"}}><a href="">Language</a></p>
                 </div>
             </div>
         
             <ul className="items-container">
-                <li className="items"><a style={{borderBottom:"none"}} href=""><i class="fa-solid fa-house"></i></a></li>
-                <li className="items"><a href="">Donate</a></li>
-                <li className="items"><a href="">About</a></li>
-                <li className="items"><a href="">Contact</a></li>
+                <li className="items"><a style={{borderBottom:"none"}} href=""><Link to="/"><i class="fa-solid fa-house"></i></Link></a></li>
+                <li className="items"><Link to="/donate">Donate</Link></li>
+                <li className="items"><Link to="/about">About</Link></li>
+                <li className="items"><Link to="/contact">Contact</Link></li>
                 <li className="items"><a href="">Language</a></li>
             </ul>
             <ul className="social">
