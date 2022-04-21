@@ -35,7 +35,13 @@ class NavBar extends React.Component{
                 <li className="items"><a href="">Donate</a></li>
                 <li className="items"><a href="">About</a></li>
                 <li className="items"><a href="">Contact</a></li>
-                <li className="items"><a href="">Language</a></li>
+                <li className="items">
+                    <button className="langs">Language</button>
+                    <div className="langs-content">
+                        <a href="">English</a>
+                        <a href="">Turkish</a>
+                    </div>
+                </li>
             </ul>
             <ul className="social">
                 <li><a href="https://www.instagram.com/airbornerocket/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
