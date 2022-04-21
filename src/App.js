@@ -16,8 +16,7 @@ class App extends React.Component{
 
   render(){
     return(
-      <div className="container">
-        <NavBar/>
+      <div>
         <Routes>
           <Route path="/" element={<Layout/>}>
             <Route index element={<Home/>} />

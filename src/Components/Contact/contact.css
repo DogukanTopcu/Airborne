@@ -1,6 +1,58 @@
 .contact-mock {
-    font-size: 36px;
+    font-size: 16px;
     color: aliceblue;
-    margin-top: 200;
-    margin-left: 100;
+    position: relative;
+    top: 25vh;
+}
+
+
+.column-contact {
+    float: left;
+    width: 45%;
+    padding: 15px;
+}
+.column-contact p {
+    position: relative;
+    right: 0px;
+}
+
+.map{
+    position: relative;
+    left: 0px;
+    text-align: center;
+}
+.map-little {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .column-contact {
+        float: left;
+        width: 95%;
+    }
+
+    .column-contact p {
+        position: relative;
+        text-align: center;
+    }
+    
+    .map {
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 528px) {
+    
+    .map {
+        display: none;
+    }
+    .map-little{
+        display: block;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
 }
