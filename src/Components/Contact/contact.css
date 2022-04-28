@@ -17,7 +17,7 @@
     padding-left: 15px;
 }
 
-.column-contact p {
+.column-contact-1 p {
     position: relative;
     right: 0px;
 }
@@ -32,12 +32,12 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .column-contact {
+    .column-contact-1, .column-contact-2 {
         float: left;
         width: 95%;
     }
 
-    .column-contact p {
+    .column-contact-1 p {
         position: relative;
         text-align: center;
     }
