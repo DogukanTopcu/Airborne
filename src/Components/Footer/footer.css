@@ -5,7 +5,7 @@
     text-align: right;
     margin-right: 30px;
 
-    color: rgba(221, 143, 143, 0.616);
+    color: rgba(250, 246, 246, 0.468);
 
     position: fixed;
     bottom: 5vh;
@@ -13,7 +13,6 @@
 
     transition: 0.3s;
 
-    font-weight: 600;
 }
 
 .flex-footer:hover{
