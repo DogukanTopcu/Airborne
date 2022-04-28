@@ -6,11 +6,17 @@
 }
 
 
-.column-contact {
+.column-contact-1 {
     float: left;
-    width: 45%;
+    width: 60%;
     padding: 15px;
 }
+.column-contact-2 {
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+
 .column-contact p {
     position: relative;
     right: 0px;
