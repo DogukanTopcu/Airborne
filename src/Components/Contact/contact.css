@@ -9,12 +9,12 @@
 .column-contact-1 {
     float: left;
     width: 60%;
-    padding: 15px;
+    padding-right: 15px;
 }
 .column-contact-2 {
     float: left;
     width: 30%;
-    padding: 15px;
+    padding-left: 15px;
 }
 
 .column-contact p {
