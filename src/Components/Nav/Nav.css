@@ -53,50 +53,53 @@ nav ul li{
     font-size: 17px;
 }
 
-.langs button:hover{
-    background-color: rgb(22, 22, 22);
-}
-
 .langs button{
+    width: 156.36px;
     font-weight: 600;
     font-size: 15px;
+    text-align: left;
     background: none;
     appearance: none;
     outline: none;
     color: #fff;
     border: none;
     cursor: pointer;
-    padding: 15px 15px;
     position: relative;
-    border-radius: 12px;
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
 }
 
 .langs:hover .langs-content{
     display: block;
 }
 
+.langs:hover button{
+    background-color: rgb(22,22,22);
+}
+
 .langs-content{
     display: none;
+    font-weight: 600;
+    font-size: 15px;
     background-color: rgb(22,22,22);
-    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
     position: absolute;
 }
 
 .langs-content p{
-    padding: 8px 0;
+    padding: 12px 0;
 }
 
 .langs-content a{
     font-size: 14px;
     font-family: "Fira sans", sans-serif; 
     text-decoration: none;
-    padding: 10px 100px 10px 20px;
+    padding: 10px 90px 10px 15px;
     color: rgb(255, 255, 255);
 }
 
 .langs-content a:hover{
-    background-color: black;
-    padding: 10px 60px 10px 60px;
+    padding: 10px 50px 10px 55px;
     transition: 0.2s;
 }
 

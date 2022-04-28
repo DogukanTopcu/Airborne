@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from '../Nav/Nav'
+import Footer from "../Footer/Footer"
 import { Outlet } from "react-router-dom";
 
 class Layout extends React.Component{
@@ -51,9 +52,11 @@ class Layout extends React.Component{
           <div className="container-for-content">
               <Outlet/>
           </div>
+
+          <Footer/>
       </div>
     );
   }
 }
 
-export default Layout
+export default Layout;
