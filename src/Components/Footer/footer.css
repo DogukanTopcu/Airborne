@@ -1,0 +1,22 @@
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+    margin-right: 30px;
+
+    color: rgba(221, 143, 143, 0.616);
+
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+
+    transition: 0.3s;
+
+    font-weight: 600;
+}
+
+.flex-footer:hover{
+    color: rgba(227, 56, 56, 0.922);
+    cursor: default;
+}
