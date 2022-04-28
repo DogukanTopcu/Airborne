@@ -2,8 +2,6 @@ import React from 'react'
 import NavBar from '../Nav/Nav'
 import { Outlet } from "react-router-dom";
 
-
-
 class Layout extends React.Component{
 
   state = {
@@ -50,7 +48,7 @@ class Layout extends React.Component{
             setLangProp = {this.setLang}
           />
 
-          <div>
+          <div className="container-for-content">
               <Outlet/>
           </div>
       </div>

@@ -1,10 +1,14 @@
 @charset "UTF-8";
 
 nav{
+    display: flex;
     width: 100vw;
-    height: 80px;
+    height: 120px;
     border-radius: 0 0 20px 20px;
     position: fixed;
+    flex-direction: "row";
+    align-items: center;
+    justify-content: space-around;
     transition: 0.4s;
 }
 
@@ -13,18 +17,11 @@ nav ul li{
 }
 
 .logo{
-    float: left;
-    margin: 20px 0 0 8%;
     user-select: none;
 }
 
 .items-container{
     list-style-type: none;
-    position: absolute;
-    margin-top: 8px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .items{
@@ -39,11 +36,11 @@ nav ul li{
     color: rgb(255, 255, 255);
     text-decoration: none;  
     padding: 15px 15px;
+    border-radius: 15px;
 }
 
 .items a:hover{
-    color: rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(255, 255, 255);
+    background-color: rgb(22, 22, 22);
 }
 
 .items a:hover i{
@@ -54,6 +51,10 @@ nav ul li{
 .items i{
     color: #fff;
     font-size: 17px;
+}
+
+.langs button:hover{
+    background-color: rgb(22, 22, 22);
 }
 
 .langs button{
@@ -67,6 +68,7 @@ nav ul li{
     cursor: pointer;
     padding: 15px 15px;
     position: relative;
+    border-radius: 12px;
 }
 
 .langs:hover .langs-content{
@@ -75,40 +77,33 @@ nav ul li{
 
 .langs-content{
     display: none;
-    background-color: rgb(37, 37, 37);
-    border-top: 2px solid rgb(255, 255, 255);
-    right: -8px;
+    background-color: rgb(22,22,22);
+    border-radius: 12px;
     position: absolute;
 }
 
 .langs-content p{
-    padding: 8px 5px;
-    border-bottom: 1px solid black;
+    padding: 8px 0;
 }
 
 .langs-content a{
     font-size: 14px;
     font-family: "Fira sans", sans-serif; 
     text-decoration: none;
-    padding: 5px 130px 5px 20px;
+    padding: 10px 100px 10px 20px;
     color: rgb(255, 255, 255);
 }
 
 .langs-content a:hover{
     background-color: black;
-    padding: 5px 90px 5px 60px;
+    padding: 10px 60px 10px 60px;
     transition: 0.2s;
-}
-
-.social{
-    float: right;
-    margin-right: 8%;
 }
 
 .social li{
     font-size: 15px;
     font-family: "Fira sans", sans-serif; 
-    margin: 37px 5px 0;  
+    margin: 0 5px 0;  
     user-select: none;
 }
 
@@ -129,14 +124,8 @@ nav ul li{
     font-size: 19px;
 }
 
-.menu{
-    float: right;
-    margin-right: 8%;
-}
-
 .hamburger{
     background: none;
-    margin: 33px 0 0 80px;
     appearance: none;
     border: none;
     outline: none;

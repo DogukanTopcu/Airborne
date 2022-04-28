@@ -32,7 +32,7 @@ class NavBar extends React.Component{
             </div>
         
             <ul className="items-container">
-                <li className="items"><a style={{borderBottom:"none"}} href=""><Link to="/"><i class="fa-solid fa-house"></i></Link></a></li>
+                <li className="items"><a href=""><Link to="/"><i class="fa-solid fa-house"></i></Link></a></li>
                 <li className="items"><Link to="/donate">{this.props.langFilteredProp[0].donate}</Link></li>
                 <li className="items"><Link to="/about">{this.props.langFilteredProp[0].about}</Link></li>
                 <li className="items"><Link to="/contact">{this.props.langFilteredProp[0].contact}</Link></li>
