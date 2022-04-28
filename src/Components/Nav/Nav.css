@@ -12,6 +12,10 @@ nav{
     transition: 0.4s;
 }
 
+nav ul{
+    margin-right: -50px;
+}
+
 nav ul li{
     display: inline-block;
 }
@@ -99,7 +103,7 @@ nav ul li{
 }
 
 .langs-content a:hover{
-    padding: 10px 50px 10px 55px;
+    padding: 10px 70px 10px 35px;
     transition: 0.2s;
 }
 
