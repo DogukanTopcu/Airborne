@@ -6,10 +6,13 @@ nav{
     height: 120px;
     border-radius: 0 0 20px 20px;
     position: fixed;
+    top: 0px;
     flex-direction: "row";
     align-items: center;
     justify-content: space-between;
     transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0.347);
+    z-index: 999;
 }
 
 nav ul li{

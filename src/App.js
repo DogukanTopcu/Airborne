@@ -9,6 +9,7 @@ import {
 import Layout from "./Components/Layout/Layout";
 import Contact from "./Components/Contact/Contact";
 import Home from "./Home";
+import About from "./Components/About/About";
 
 class App extends React.Component{
 
@@ -18,6 +19,7 @@ class App extends React.Component{
         <Routes>
           <Route path="/" element={<Layout/>}>
             <Route index element={<Home/>} />
+            <Route path="about" element={<About /> }/>
             <Route path="contact" element={<Contact />}/>
           </Route>
         </Routes>
