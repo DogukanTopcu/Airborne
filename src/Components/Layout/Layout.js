@@ -49,7 +49,7 @@ class Layout extends React.Component{
             setLangProp = {this.setLang}
           />
 
-          <div className="container-for-content">
+          <div >
               <Outlet/>
           </div>
 
