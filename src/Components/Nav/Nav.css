@@ -10,14 +10,9 @@ nav{
     flex-direction: "row";
     align-items: center;
     justify-content: space-between;
-<<<<<<< HEAD
-    transition: 0.2s;
-    z-index: 2;
-=======
     transition: 0.4s;
     background-color: rgba(0, 0, 0, 0.347);
     z-index: 999;
->>>>>>> 9b5bab711844eed2452c4b0e3b6ebf80de513265
 }
 
 

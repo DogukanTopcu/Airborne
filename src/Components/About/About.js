@@ -6,7 +6,7 @@ import ReviewYazilim from './ReviewYazilim';
 
 const About = () => {
   return (
-    <>
+    <div className='container-for-content'>
       <div className='review-title'>
         <h2>Our Reviews</h2>
       </div>
@@ -17,7 +17,7 @@ const About = () => {
         <ReviewAviyonik />
         <ReviewYazilim />
       </div>
-    </>
+    </div>
   )
 }
 
