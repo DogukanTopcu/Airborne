@@ -11,8 +11,13 @@
     "loaders.css": "^0.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
     "react-leaflet": "^4.0.0",
     "react-loaders": "^3.0.1",
+=======
+    "react-icon": "^1.0.0",
+    "react-icons": "^4.3.1",
+>>>>>>> 9b5bab711844eed2452c4b0e3b6ebf80de513265
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "sass": "^1.51.0",
