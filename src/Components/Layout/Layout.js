@@ -43,7 +43,7 @@ class Layout extends React.Component{
     );
 
     return (
-      <div>
+      <>
           <NavBar
             langFilteredProp = {langFiltered}
             setLangProp = {this.setLang}
@@ -54,7 +54,7 @@ class Layout extends React.Component{
           </div>
 
           <Footer/>
-      </div>
+      </>
     );
   }
 }

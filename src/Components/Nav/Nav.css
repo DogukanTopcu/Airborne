@@ -9,8 +9,10 @@ nav{
     flex-direction: "row";
     align-items: center;
     justify-content: space-between;
-    transition: 0.4s;
+    transition: 0.2s;
+    z-index: 2;
 }
+
 
 nav ul li{
     display: inline-block;
@@ -18,7 +20,17 @@ nav ul li{
 
 .logo{
     user-select: none;
+    transition: 0.2s;
+}
+
+.logo-navigation{
     margin-left: 8%;
+    margin-right: 13px;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
 }
 
 .items-container{
@@ -26,7 +38,7 @@ nav ul li{
 }
 
 .items{
-    font-size: 15px;
+    font-size: 16px;
     font-family: "Fira sans", sans-serif; 
     margin: 0 5px 0;  
     user-select: none;
@@ -40,24 +52,33 @@ nav ul li{
     border-radius: 15px;
 }
 
+.items-w-icon a{
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-decoration: none;  
+    padding: 15px 15px;
+    border-radius: 15px;
+}
+
 .items a:hover{
     background-color: rgb(22, 22, 22);
 }
 
-.items a:hover i{
+.items-w-icon a:hover i{
     transform: scale(1.8);
     transition: 0.2s;
 }
 
-.items i{
+.items-w-icon i{
     color: #fff;
-    font-size: 17px;
+    font-size: 18px;
+    transition: 0.2s;
 }
 
 .langs button{
     width: 126.36px;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     text-align: left;
     background: none;
     appearance: none;
@@ -66,6 +87,7 @@ nav ul li{
     border: none;
     cursor: pointer;
     position: relative;
+    user-select: none;
     padding: 15px;
     border-radius: 12px 12px 0 0;
 }
@@ -81,14 +103,14 @@ nav ul li{
 .langs-content{
     display: none;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     background-color: rgb(22,22,22);
     border-radius: 0 0 12px 12px;
     position: absolute;
 }
 
 .langs-content p{
-    padding: 12px 0;
+    padding: 15px 0;
 }
 
 .langs-content a{
@@ -109,7 +131,7 @@ nav ul li{
 }
 
 .social li{
-    font-size: 15px;
+    font-size: 18px;
     font-family: "Fira sans", sans-serif; 
     margin: 0 5px 0;  
     user-select: none;
@@ -129,7 +151,8 @@ nav ul li{
 }
 
 .social i{
-    font-size: 19px;
+    font-size: 20px;
+    transition: 0.2s;
 }
 
 .menu{
@@ -282,13 +305,13 @@ nav ul li{
     display: block;
 }
 
-@media (min-width: 982px){
+@media (min-width: 1080px){
     .menu{
         display: none;
     }
 }
 
-@media (max-width: 982px){
+@media (max-width: 1080px){
     nav ul{
         display: none;
     }

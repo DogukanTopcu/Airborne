@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,21 +9,21 @@ import {
 import Layout from "./Components/Layout/Layout";
 import Contact from "./Components/Contact/Contact";
 import Home from "./Home";
+import Support from "./Components/Support/Support"
 
-class App extends React.Component{
+const App = () => {
 
-  render(){
-    return(
-      <div>
-        <Routes>
-          <Route path="/" element={<Layout/>}>
-            <Route index element={<Home/>} />
-            <Route path="contact" element={<Contact />}/>
-          </Route>
-        </Routes>
-      </div>
-    );
-  }
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="support" element={<Support/>}/>
+        </Route>
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
