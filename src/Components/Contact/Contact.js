@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <div className='contact-mock container'>
       <div className="contact-column">
-        <h1>İletişime Geç</h1>
+        <h1>iletişime geç</h1>
         <form>
 
           <div style={{ display: "flex", flexDirection: "row" }}>
@@ -25,7 +25,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div style={{ display: "flex", flexDirection: "column", marginTop: "35px"}}>
+          <div style={{ display: "flex", flexDirection: "column", marginTop: "60px"}}>
             <label>açıklama</label>
             <input className="description" type="text" name="descripton"/>
           </div>
