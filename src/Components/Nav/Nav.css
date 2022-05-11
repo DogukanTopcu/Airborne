@@ -11,7 +11,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     transition: 0.4s;
-    background-color: rgba(0, 0, 0, 0.347);
     z-index: 999;
 }
 

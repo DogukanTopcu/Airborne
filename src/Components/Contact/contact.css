@@ -1,78 +1,60 @@
-.contact-mock {
-    display: flex;
-    font-size: 18px;
-    color: aliceblue;
+
+.contact-mock{
+    align-items: center;
     justify-content: space-between;
 }
 
-.column-contact-1 {
-    margin-top: 25vh;
-    margin-left: 8%;
-    width: 40%;
-}
 
-.column-contact-2 {
-    margin-top: 25vh;
-    margin-right: 8%;
-    margin-left: 50px;
-    width: 600px;
-}
-
-.column-contact-1 p {
-    position: relative;
-    right: 0px;
+.leaflet-container{
+    width: 30vw;
+    height: 33vw;
 }
 
 .map{
-    text-align: center;
-}
-
-.map-little {
-    display: none;
-}
-
-@media screen and (max-width: 1080px) {
-    
-    .contact-mock{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .column-contact-1{
-        width: 84%;
-        margin: 0;
-    }
-
-    .column-contact-2{
-        width: 380px;
-        height: 240px;
-        margin: 0;
-        margin-top: 20px;
-    }
-
-    .column-contact-1 p {
-        position: relative;
-        text-align: center;
-    }
-    
-    .map {
-        margin: auto;
-        width: 100%;
-        text-align: center;
-    }
+    margin: 0 8%;
 }
 
 
-@media screen and (max-width: 528px) {
-    
-    .map {
-        display: none;
-    }
-    .map-little{
-        display: block;
-        margin: auto;
-        width: 100%;
-        text-align: center;
-    }
+.contact-column{
+    display: flex;
+    width: 34vw;
+    height: 30vw;
+    margin: 0 8%;
+    flex-direction: column;
+}
+
+.contact-column h1{
+    font-family: "Coolvetica";
+    color: #fff;
+    font-size: 58px;
+    font-weight: 100;
+    margin-bottom: 60px;
+}
+
+label{
+    color: #fff;
+    font-size: 18px;
+    font-family: "Fira sans", sans-serif;
+    margin-bottom: 5px
+}
+
+.name{
+    width: 15vw;
+    height: 35px;
+    margin-right: 4vw;
+}
+
+.email{
+    width: 15vw;
+    height: 35px;
+}
+
+.description{
+    width: 34vw;
+    height: 180px;
+}
+
+input{
+    border-radius: 5px;
+    padding: 5px 5px;
 }

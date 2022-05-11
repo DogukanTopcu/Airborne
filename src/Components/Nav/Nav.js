@@ -44,7 +44,7 @@ const NavBar = (props) => {
             </div>
         
             <ul className="items-container">
-                <li className="items-w-icon"><Link style={{backgroundColor:"none"}} to="/"><i class="fa-solid fa-house"></i></Link></li>
+                <li className="items-w-icon"><Link style={{backgroundColor:"none"}} to="/"><i className="fa-solid fa-house"></i></Link></li>
                 <li className="items"><Link to="/support">{props.langFilteredProp[0].donate}</Link></li>
                 <li className="items"><Link to="/about">{props.langFilteredProp[0].about}</Link></li>
                 <li className="items"><Link to="/contact">{props.langFilteredProp[0].contact}</Link></li>
@@ -58,7 +58,7 @@ const NavBar = (props) => {
             </ul>
             <ul className="social">
                 <li><a href="https://www.instagram.com/airbornerocket/" target="_blank"><i className="fa-brands fa-instagram"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i className="fa-brands fa-twitter"></i></a></li>
                 <li><a href="https://www.linkedin.com/company/airborneroket/" target="_blank"><i className="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </nav>

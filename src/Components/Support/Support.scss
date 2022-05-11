@@ -5,10 +5,9 @@
     flex-direction: column;
 
     left: 8%;
+    top: 250px;
 
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 
     animation: slider 1s 2s forwards;
 }
@@ -38,21 +37,4 @@
         background-color: blueviolet;
         color: #fff;
     }
-}
-
-.slider-top{
-    margin-left: 43px;
-    animation: sliderTop 1s 2s forwards;
-}
-
-
-.slider-mid{
-    margin-left: 165px;
-    animation: sliderMid 1s 2s forwards;
-}
-
-
-.slider-bottom{
-    margin-left:177.5px;
-    animation: sliderBottom 1s 2s forwards;
 }
