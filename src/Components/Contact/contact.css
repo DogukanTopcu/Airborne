@@ -1,7 +1,5 @@
 
 
-
-
 .contact-mock{
     align-items: center;
     justify-content: space-between;
@@ -20,31 +18,42 @@
 
 .contact-column{
     display: flex;
-    width: 34vw;
+    width: 31vw;
     height: 30vw;
     margin: 0 8%;
     flex-direction: column;
 }
 
+.title{
+    display: flex;
+    align-items: center;
+    height: 130px;
+}
+
 .contact-column h1{
     font-family: "Coolvetica";
     color: #fff;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 100;
-    margin-bottom: 60px;
+    margin-right: 50px;
 }
 
-label{
+.contact-column button{
+    height: min-content;
+    appearance: none;
+    background: none;
+    border: none;
+}
+
+.contact-column i{
+    font-size: 30px;
     color: #fff;
-    font-size: 18px;
-    font-family: "Fira sans", sans-serif;
-    margin-bottom: 5px
 }
 
 .name{
     width: 15vw;
     height: 35px;
-    margin-right: 4vw;
+    margin-right: 1vw;
 }
 
 .email{
@@ -53,8 +62,9 @@ label{
 }
 
 .description{
-    width: 34vw;
+    width: 31vw;
     height: 180px;
+    margin-top: 1vw;
 }
 
 input{

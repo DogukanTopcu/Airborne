@@ -11,24 +11,21 @@ const Contact = () => {
   return (
     <div className='contact-mock container'>
       <div className="contact-column">
-        <h1>iletişime geç</h1>
+        <div className="title">
+          <h1>iletişime geç</h1>
+          <button>
+            <i className="fas fa-paper-plane"></i>
+          </button>
+        </div>
+        
         <form>
 
           <div style={{ display: "flex", flexDirection: "row" }}>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <label>isim</label>
-              <input className="name" type="text" name="name" />
-            </div>
-            <div style={{ display: "flex", flexDirection: "column" }}>
-              <label>email</label>
-              <input className="email" type="text" name="email" />
-            </div>
+              <input placeholder='first name' className="name" type="text" name="name" />
+              <input placeholder='last name' className="email" type="text" name="email" />
           </div>
 
-          <div style={{ display: "flex", flexDirection: "column", marginTop: "60px"}}>
-            <label>açıklama</label>
-            <input className="description" type="text" name="descripton"/>
-          </div>
+          <input placeholder='description' className="description" type="text" name="descripton"/>
 
         </form>
       </div>
